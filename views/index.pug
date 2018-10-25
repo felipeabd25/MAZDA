@@ -1,0 +1,100 @@
+extends layout
+
+block content
+    header.header-mazda
+        	.container-fluid
+			.row
+                .col.flex.justify-content-end.contact
+                    .contact-data.flex.justify-content-center
+                        .container-fluid
+                            .row 
+                                .col.flex.justify-content-end
+				
+				img(src="/images/mazda-logo.png", style="display:scroll;position:fixed;top:0px;right:0px;")
+				img(src="/images/zoom-zoom.png", style="display:scroll;position:fixed;top:0px;left:0px;")
+				
+				   "/images/zoom-zoom.png"
+			.row
+                
+				.col.flex.justify-content-end.contact
+                    .contact-data.flex.justify-content-center
+                        .container-fluid
+                            .row 
+                                .col.flex.justify-content-end
+
+				img(class="banner", src="images/banner-mazda-desktop.jpg", alt="mazda")
+
+                            
+            .row
+                .col.bg-mazda.flex.justify-content-end
+                    .container-fluid
+                        .row
+                            .col.flex.justify-content-end
+                                form.material-card.pd-1(action="/callme", method="post", enctype="application/x-www-form-urlencoded", name="callmeSingle")
+                                    .container
+                                        .row
+                                            .col
+                                               
+											    span.type-your-number
+
+													h2(class="text-white title-1 ta-c", style="font-size: 17px") CONTACTA UN ASESOR 
+													br 
+													| Y PROGRAMA TU 
+													span(class="font-regular") TEST DRIVE
+													p(class="title-1 text-white ta-c")
+                        							| Llama en Medell&iacute;n
+													p(class="p-font-size-25 text-white ta-c")
+                        							a(class="text-white", href="tel:0342836941")
+													i(class="fas fa-phone", style="transform: rotate(90deg);") 283 69 41
+                                        .row
+                                            .col
+											hr
+                                                h3.we-call-you
+                                                    | ¿Prefieres que te llamemos?
+											hr		
+										.row
+											.col
+											
+												h3.put-your-name
+													| Ingresa tu n&uacute;mero de tel&eacute;fono
+											
+										.row
+                                            .col
+                                                input.form-control(type="text", name="mobile")
+                                        .row.mg-top-0_5
+                                            .col.col-10.flex.justify-content-start
+                                                .terms.flex.justify-content-center
+                                                    i.fas.fa-check
+                                                   input(type="radio", id="radio-tipo-telefono-fijo", name="tipo-telefono", onchange="javascript:showTelefono()")
+														label(class="text-white", for="radio-tipo-telefono-fijo"Fijo)
+															label(for="|")
+												    input(type="radio", id="radio-tipo-telefono-celular", name="tipo-telefono", onchange="javascript:showTelefono()")
+														label(class="text-white", for="radio-tipo-telefono-celular"Movil)
+                                                 .row
+												  .col
+												  input(type="tel", id="telefonoLlamar" placeholder="Tu teléfono", class="form-control invalid", required data-required-message="El teléfono es requerido.")
+												  
+												  .row
+											      .col
+
+												|Acepto
+												 a(href="#").accept-terms te&eacute;rminos y condiciones
+												
+                                        .row.mg-top-1.mg-b-1
+                                            .col
+                                                button(type="submit", placeholder="Tu teléfono", aria-label="true").btn.btn-theme TE LLAMAMOS
+
+						.row.mg-top-1
+                        
+    .ctn-.flex.justify-content-end
+        button.btn.btn-theme.btn-popup(type="button", aria-label="true", data-toggle="modal", data-target="#contactme")
+            i.fas.fa-phone-volume
+			.modal-footer
+                    .container-fluid
+                    
+						.row
+                        .col
+
+					   a(href="http://concesionariomazda.com.co/" target="_blank",img src="./public/imagenes/Vehiculos-del-camino.png" alt="vehiculos-del-camino" border="0")
+						a(href="http://concesionariomazda.com.co/" style='display:scroll;position:fixed;bottom:0px;left:0px;') 
+						img(src="./public/imagenes/Vehiculos-del-camino.png")
